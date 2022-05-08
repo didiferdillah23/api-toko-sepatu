@@ -20,7 +20,7 @@ class CreateTransactionsTable extends Migration
             $table->float('total_price')->default(0);
             $table->float('shipping_price')->default(0);
             $table->string('status')->default('PENDING');
-            $table->string('payment')->default('PENDING');
+            $table->string('payment')->default('MANUAL');
             $table->softDeletes();
             $table->timestamps();
         });
